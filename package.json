@@ -6,9 +6,11 @@
   "private": true,
   "dependencies": {
     "@nx/next": "16.8.1",
+    "classnames": "^2.3.2",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.46.1",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -59,7 +61,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jsdom": "~22.1.0",
     "nx": "16.8.1",
-    "nx-cloud": "latest",
+    "nx-cloud": "16.4.0",
     "postcss": "8.4.21",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.3.0",
@@ -72,3 +74,4 @@
     "vitest": "~0.32.0"
   }
 }
+
