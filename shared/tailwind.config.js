@@ -21,7 +21,9 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries')
+  ],
   variants: {
     extend: {
       translate: ['active'],
