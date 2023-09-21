@@ -1,6 +1,4 @@
 import { ComponentPropsWithoutRef } from 'react';
-import styles from './button.module.css';
-import classNames from 'classnames';
 
 export type ButtonProps = ComponentPropsWithoutRef<'button'> & {
   text: string;
@@ -12,12 +10,12 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button className="group border border-primary-500 p-5 relative">
-      <span className="transition duration-75 scale-100 transform group-hover:text-yellow-500 group-hover:scale-0 overflow-hidden">
+    <button className="border-primary-500 group relative border p-5">
+      <span className="scale-100 transform overflow-hidden transition duration-75 group-hover:scale-0 group-hover:text-yellow-500">
         {text}
       </span>
 
-      <span className="flex items-center justify-center transition duration-75 absolute transform translate-y-full inset-0 group-hover:text-red-500 group-hover:translate-y-0">
+      <span className="absolute inset-0 flex translate-y-full transform items-center justify-center p-4 pt-2 transition duration-75 hover:p-2 group-hover:translate-y-0 group-hover:text-red-500">
         {text}
       </span>
     </button>
